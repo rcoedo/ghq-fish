@@ -7,6 +7,9 @@ function __ghq_get
                 if test $__hub = "bb"
                       ghq get git@bitbucket.org:$__repository.git
                 end
+                if test $__hub = "gl"
+                      ghq get git@gitlab.com:$__repository.git
+                end
           else
                 ghq get -p $argv[1]
           end
